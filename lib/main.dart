@@ -23,6 +23,7 @@ Future<void> main() async {
   WidgetsFlutterBinding();
   await HiveService.createBox();
   await GetStorage.init();
+  
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
